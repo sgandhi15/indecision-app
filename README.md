@@ -1,35 +1,65 @@
 # Indecision App
-[(◔‿◔)!☞ Live Demo](https://indecision.dipvachhani.tech/)
 
-Web application built with ReactJS.
+## Project Overview
 
-The indecision app will help you make up your mind, when you can’t decide between an array of options. Add the options you’d like the app to go through and it will randomly select for you.
+Indecision App is a modern React application designed to help users make decisions when they're stuck between multiple options. Simply add your options, click the "What should I do?" button, and let the app randomly decide for you!
 
-#### Platforms / Technologies
+### Key Features
 
-* React.js
+- **Decision Making Helper**: Add multiple options and let the app randomly select one for you
+- **Persistent Storage**: Uses browser's localStorage to save your options between sessions
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **Intuitive UI**: Clean, modern interface with easy-to-use controls
+- **Modal Feedback**: Displays your randomly selected option in a modal for clear visibility
 
-* Webpack
+## Technology Stack
 
-* Node
+- **Frontend**: React.js with class components and state management
+- **Styling**: SCSS for advanced styling capabilities
+- **Build Tools**: Webpack for bundling, Babel for transpiling
+- **Package Manager**: Yarn
+- **Storage**: Browser localStorage API
+- **Server**: Express.js for production deployment
+- **Deployment**: Configured for Heroku deployment
 
-* Local Storage
+## Getting Started
 
-## ⌨️ Development
+### Prerequisites
 
-Setup:
+- Node.js (v10 or higher)
+- Yarn package manager
 
-- run `yarn install`
-- run `yarn run build:prod`
-- run `yarn start`
+### Installation
 
->***Use Gitpod, a free online Development environment for GitHub.***
+```bash
+# Clone the repository
+git clone https://github.com/sgandhi15/indecision-app.git
+cd indecision-app
 
-[![DIp15739 on gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DIp15739/Indecision-app)
+# Install dependencies
+yarn install
 
-<img src="https://user-images.githubusercontent.com/42184833/83978433-0cb08300-a925-11ea-8e23-80f20ed655ed.PNG">
+# Start development server
+yarn run dev-server
 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="https://user-images.githubusercontent.com/42184833/83978245-b98a0080-a923-11ea-924d-7c03e817fad2.PNG">|<img src="https://user-images.githubusercontent.com/42184833/83978310-32895800-a924-11ea-9b6b-591cdb3baad7.PNG">|<img src="https://user-images.githubusercontent.com/42184833/83978574-1d152d80-a926-11ea-9724-faee31e557ad.PNG">|
-|<img src="https://user-images.githubusercontent.com/42184833/83978638-8bf28680-a926-11ea-90b5-4d97c715e91f.png">|<img src="https://user-images.githubusercontent.com/42184833/83978651-9d3b9300-a926-11ea-92a8-3d400889feb8.png">|<img src="https://user-images.githubusercontent.com/42184833/83978652-9e6cc000-a926-11ea-95c2-a851869f38f7.png">|
+# For production build
+yarn run build:prod
+yarn start
+```
+
+## Development Mode
+
+```bash
+# Run webpack dev server
+yarn run dev-server
+```
+
+## Production Deployment
+
+```bash
+# Build for production
+yarn run build:prod
+
+# Start the server
+yarn start
+```
